@@ -1,5 +1,5 @@
 ---
-layout: landing
+layout: editorial
 ---
 
 # 비즈메시지 파일 관리
