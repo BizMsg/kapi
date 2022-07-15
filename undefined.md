@@ -8,9 +8,9 @@
 
 **Request**
 
-![](<.gitbook/assets/image (6).png>)
+![](<.gitbook/assets/image (6) (1).png>)
 
-![](<.gitbook/assets/image (4).png>)
+![](<.gitbook/assets/image (4) (1).png>)
 
 **Response**
 
@@ -106,7 +106,7 @@
 
 **Request**
 
-![](<.gitbook/assets/image (5).png>)
+![](<.gitbook/assets/image (5) (1).png>)
 
 ****
 
@@ -124,7 +124,7 @@
 
 **Request**
 
-![](<.gitbook/assets/image (9).png>)
+![](<.gitbook/assets/image (9) (1).png>)
 
 
 
@@ -150,13 +150,7 @@
 
 **Request**
 
-|     **키**     | **타입** | **필수** |                          **설명**                          |
-| :-----------: | :----: | :----: | :------------------------------------------------------: |
-|     bizId     | String |    O   |                       BIZPPURIO ID                       |
-|     apiKey    | String |    O   |                         API 발급 키                         |
-|   senderKey   | String |    O   |     <p>발신 프로필 키<br>(senderKeyType이 G인 경우 프로필 그룹키)</p>    |
-| senderKeyType | String |    X   |        <p>발신 프로필 키 타입<br>(S:일반(default), G:그룹)</p>       |
-|  templateCode | String |    O   | <p>템플릿 코드<br>(영문, 숫자, 언더바(_), 하이픈(-)만 입력 가능, 최대 30자)</p> |
+![](<.gitbook/assets/image (9).png>)
 
 
 
@@ -261,14 +255,7 @@
 
 **Request**
 
-|     **키**     | **타입** | **필수** |                               **설명**                               |
-| :-----------: | :----: | :----: | :----------------------------------------------------------------: |
-|     bizId     | String |    O   |                            BIZPPURIO ID                            |
-|     apiKey    | String |    O   |                              API 발급 키                              |
-|   senderKey   | String |    O   | <p>발신 프로필 키<br><strong></strong>(senderKeyType이 G인 경우 프로필 그룹키)</p> |
-| senderKeyType | String |    X   |             <p>발신 프로필 키 타입<br>(S:일반(default), G:그룹)</p>            |
-|  templateCode | String |    O   |                               템플릿 코드                               |
-|    comment    | String |    X   |                    의견 또는 문의사항 (최대 500자까지 입력 가능)                    |
+![](<.gitbook/assets/image (10).png>)
 
 **Response**
 
@@ -288,17 +275,10 @@
 * **POST** /v3/kakao/template/request\_with\_file
 * **Content-Type:** multipart/form-data
 
-**Request**
+**Request**\
+****
 
-|     **키**     | **타입** | **필수** |                       **설명**                      |
-| :-----------: | :----: | :----: | :-----------------------------------------------: |
-|     bizId     | String |    O   |                    BIZPPURIO ID                   |
-|     apiKey    | String |    O   |                      API 발급 키                     |
-|   senderKey   | String |    O   | <p>발신 프로필 키<br>(senderKeyType이 G인 경우 프로필 그룹키)</p> |
-| senderKeyType | String |    X   |    <p>발신 프로필 키 타입<br>(S:일반(default), G:그룹)</p>    |
-|  templateCode | String |    O   |                       템플릿 코드                      |
-|    comment    | String |    O   |       <p>의견 또는 문의사항<br>(최대 500자까지 입력 가능)</p>      |
-|   attachment  |  File  |    X   |           업로드할 파일의 절대 경로, 다수의 파일 업로드 가능           |
+![](<.gitbook/assets/image (12).png>)
 
 
 
@@ -319,13 +299,7 @@
 
 **Request**
 
-|     **키**     | **타입** | **필수** |                       **설명**                      |
-| :-----------: | :----: | :----: | :-----------------------------------------------: |
-|     bizId     | String |    O   |                    BIZPPURIO ID                   |
-|     apiKey    | String |    O   |                      API 발급 키                     |
-|   senderKey   | String |    O   | <p>발신 프로필 키<br>(senderKeyType이 G인 경우 프로필 그룹키)</p> |
-| senderKeyType | String |    X   |    <p>발신 프로필 키 타입<br>(S:일반(default), G:그룹)</p>    |
-|  templateCode | String |    O   |                       템플릿 코드                      |
+![](<.gitbook/assets/image (4).png>)
 
 **Response**
 
@@ -346,13 +320,7 @@
 
 **Request**
 
-|     **키**     | **타입** | **필수** |                       **설명**                      |
-| :-----------: | :----: | :----: | :-----------------------------------------------: |
-|     bizId     | String |    O   |                    BIZPPURIO ID                   |
-|     apiKey    | String |    O   |                      API 발급 키                     |
-|   senderKey   | String |    O   | <p>발신 프로필 키<br>(senderKeyType이 G인 경우 프로필 그룹키)</p> |
-| senderKeyType | String |    X   |    <p>발신 프로필 키 타입<br>(S:일반(default), G:그룹)</p>    |
-|  templateCode | String |    O   |                       템플릿 코드                      |
+![](<.gitbook/assets/image (3).png>)
 
 
 
@@ -375,13 +343,7 @@
 
 **Request**
 
-|     **키**     | **타입** | **필수** |                       **설명**                      |
-| :-----------: | :----: | :----: | :-----------------------------------------------: |
-|     bizId     | String |    O   |                    BIZPPURIO ID                   |
-|     apiKey    | String |    O   |                      API 발급 키                     |
-|   senderKey   | String |    O   | <p>발신 프로필 키<br>(senderKeyType이 G인 경우 프로필 그룹키)</p> |
-| senderKeyType | String |    X   |    <p>발신 프로필 키 타입<br>(S:일반(default), G:그룹)</p>    |
-|  templateCode | String |    O   |                       템플릿 코드                      |
+![](<.gitbook/assets/image (6).png>)
 
 
 
@@ -404,13 +366,7 @@
 
 **Request**
 
-|     **키**     | **타입** | **필수** |                       **설명**                      |
-| :-----------: | :----: | :----: | :-----------------------------------------------: |
-|     bizId     | String |    O   |                    BIZPPURIO ID                   |
-|     apiKey    | String |    O   |                      API 발급 키                     |
-|   senderKey   | String |    O   | <p>발신 프로필 키<br>(senderKeyType이 G인 경우 프로필 그룹키)</p> |
-| senderKeyType | String |    X   |    <p>발신 프로필 키 타입<br>(S:일반(default), G:그룹)</p>    |
-|  templateCode | String |    O   |                       템플릿 코드                      |
+![](<.gitbook/assets/image (2).png>)
 
 
 
@@ -433,13 +389,7 @@
 
 **Request**
 
-|     **키**     | **타입** | **필수** |                       **설명**                      |
-| :-----------: | :----: | :----: | :-----------------------------------------------: |
-|     bizId     | String |    O   |                    BIZPPURIO ID                   |
-|     apiKey    | String |    O   |                      API 발급 키                     |
-|   senderKey   | String |    O   | <p>발신 프로필 키<br>(senderKeyType이 G인 경우 프로필 그룹키)</p> |
-| senderKeyType | String |    X   |    <p>발신 프로필 키 타입<br>(S:일반(default), G:그룹)</p>    |
-|  templateCode | String |    O   |                       템플릿 코드                      |
+![](<.gitbook/assets/image (5).png>)
 
 
 
