@@ -6,3 +6,4 @@
 * [발신프로필 관리](undefined-2.md)
 * [그룹 관리](undefined-3.md)
 * [플러그인 콜백 URL](url.md)
+* [개정 이력](revision.md)
