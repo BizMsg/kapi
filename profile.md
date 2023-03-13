@@ -1,6 +1,6 @@
 # 발신프로필 관리
 
-### 발신프로필 인증토큰 요청
+&#x20;인증토큰 요청
 
 * 발신프로필 등록을 위한 카카오톡 채널 인증 토큰을 요청합니다.
 * **POST** /v3/kakao/profile/token
@@ -146,27 +146,19 @@
 
 **Response**
 
-|  **키**  |                      |  **타입** |                                          **설명**                                         |
-| :-----: | :------------------: | :-----: | :-------------------------------------------------------------------------------------: |
-|   code  |                      |  String |                                          결과 코드                                          |
-| message |                      |  String |                                       실패 시 결과 메시지                                       |
-|   data  |                      |  Object |                                       성공 시 카테고리 정보                                      |
-|         |       senderKey      |  String |                                       조회된 발신프로필 키                                       |
-|         |         uuid         |  String |                                         카카오톡 채널                                         |
-|         |         name         |  String |                                     카카오톡 채널 발신프로필 명                                     |
-|         |        status        |  String |                                         발신프로필 상태                                        |
-|         |         block        | Boolean |                                       발신프로필 차단 여부                                       |
-|         |     profileStatus    |  String | <p>카카오톡 채널 상태 <br>(A: activated, C: deactivated, B: block, E: deleting, D: deleted)</p> |
-|         |       createdAt      |  String |                                        발신프로필 등록일                                        |
-|         |      modifiedAt      |  String |                                          최종 수정일                                         |
-|         |     categoryCode     |  String |                                       발신프로필 카테고리코드                                      |
-|         |       alimtalk       | Boolean |                                        알림톡 사용 여부                                        |
-|         |        bizchat       | Boolean |                                        상담톡 사용 여부                                        |
-|         |       brandtalk      | Boolean |                                        브랜드톡 사용 여부                                       |
-|         | committalCompanyName |  String |                                     위탁사 이름 (상담톡 관련)                                     |
-|         |      chennelKey      |  String |                                     메시지 전송 결과 수신 채널키                                    |
-|         |    businessprofile   | Boolean |                                    카카오톡 채널 비즈니스 인증 여부                                   |
-|         |     businessType     |  String |                                    카카오톡 채널 비즈니스 인증 타입                                   |
+|  **키**  |            |           | **타입** | **설명**        |
+| :-----: | :--------: | :-------: | :----: | ------------- |
+|   code  |            |           | String | 결과 코드         |
+| message |            |           | String | 실패 시 결과 메시지   |
+|   data  |            |           | Object | 성공 시 발신프로필 목록 |
+|         |  senderKey |           | String | 조회된 발신프로필 키   |
+|         | yellowName |           | String | 발신프로필 명       |
+|         | yellowStat |           | String | 발신프로필 상태      |
+|         |    rdate   |           | String | 발신프로필 생성일자    |
+|         |   groups   |           |  Array | 성공 시 그룹데이터    |
+|         |            |  groupKey | String | 그룹 키          |
+|         |            |    name   | String | 그룹 이름         |
+|         |            | createdAt | String | 생성 일자         |
 
 
 
