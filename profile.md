@@ -81,6 +81,7 @@
 | :----------: | :----: | :----: | :-------------------------------------------------------------: |
 |     bizId    | String |    O   |                           BIZPPURIO ID                          |
 |    apiKey    | String |    O   |                             API 발급 키                            |
+|     token    | String |    O   |                            수신받은 인증토큰                            |
 |  phoneNumber | String |    O   | <p>토큰을 수신할 휴대폰번호<br><strong></strong>(Yellow ID의 핸드폰번호와 일치)</p> |
 |   yellowId   | String |    O   |                           카카오톡 채널(@ID)                          |
 | categoryCode | String |    O   |                             카테고리 코드                             |
