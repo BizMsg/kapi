@@ -132,8 +132,17 @@
 |         |    businessprofile   | Boolean |                                            카카오톡 채널 비즈니스 인증 여부                                            |
 |         |     businessType     |  String |                                            카카오톡 채널 비즈니스 인증 타입                                            |
 
-### 발신프로필 리스트 전체조회
+*
 
+
+
+
+
+
+
+### 발신프로필 리스트 전체조회 (종료예정)
+
+* 23/06/30 종료 예정 API
 * 발신프로필 전체 목록을 조회합니다.
 * **POST** /v3/kakao/profile/all
 * **Content-Type:** application/json; charset=utf-8
@@ -163,8 +172,58 @@
 
 
 
-### 발신프로필 리스트 조회
+### 발신프로필 리스트 전체조회 (신규)
 
+• 발신프로필 목록을 조회합니다.
+
+• POST /v3/kakao/profile/use
+
+• Content-Type: application/json; charset=utf-8
+
+**Request**
+
+|  **키** | **타입** | **필수** |    **설명**    |
+| :----: | :----: | :----: | :----------: |
+|  bizId | String |    O   | BIZPPURIO ID |
+| apiKey | String |    O   |   API 발급 키   |
+
+**Response**
+
+|  **키**  |         |                     |           | **타입** | **설명**                                                                       |
+| :-----: | :-----: | :-----------------: | :-------: | ------ | ---------------------------------------------------------------------------- |
+|   code  |         |                     |           | String | 결과 코드                                                                        |
+| message |         |                     |           | String | 실패 시 결과 메시지                                                                  |
+|   data  |         |                     |           | Object | 성공 시 데이터                                                                     |
+|         | success |                     |           | Array  | 성공케이스에 대한 리스트                                                                |
+|         |         |      senderKey      |           | String | 발신프로필 키                                                                      |
+|         |         |         uuid        |           | String | 발신프로필 상태                                                                     |
+|         |         |         name        |           | String | 카카오톡 채널 프로필 명                                                                |
+|         |         |        status       |           | String | 상태 (A: 정상)                                                                   |
+|         |         |        block        |           | String | 발신 프로필 차단 여부                                                                 |
+|         |         |       dormant       |           | String | 발신 프로필 휴면 여부                                                                 |
+|         |         |    profileStatus    |           | String | 카카오톡 채널 상태 (A: activated, C: deactivated, B: block, E: deleting, D: deleted) |
+|         |         |      createdAt      |           | String | 등록일                                                                          |
+|         |         |      modifiedAt     |           | String | 최종 수정일                                                                       |
+|         |         |     categoryCode    |           | String | 카테고리 코드                                                                      |
+|         |         |       alimtalk      |           | String | 알림톡 사용 여부                                                                    |
+|         |         |       bizchat       |           | String | 상담톡 사용 여부                                                                    |
+|         |         |      brandtalk      |           | String | 브랜드톡 사용 여부                                                                   |
+|         |         | commitalCompanyName |           | String | 위탁사 이름 (상담톡 관련)                                                              |
+|         |         |      channelKey     |           | String | 메시지 전송 결과 수신 채널키                                                             |
+|         |         |   businessProfile   |           | String | 카카오톡 채널 비즈니스 인증 여부                                                           |
+|         |         |     businessType    |           | String | 카카오톡 채널 비즈니스 인증 타입                                                           |
+|         |         |        groups       |           | Array  | 발신 프로필 그룹 정보                                                                 |
+|         |         |                     |  groupKey | String | 발신 프로필 그룹 키                                                                  |
+|         |         |                     |    name   | Array  | 이름                                                                           |
+|         |         |                     | createdAt | String | 등록일                                                                          |
+|         |   fail  |                     |           | Array  | 실패케이스에 대한 리스트                                                                |
+|         |         |      senderKey      |           | String | 발신 프로필 키                                                                     |
+|         |         |         code        |           | String | 실패 결과 코드                                                                     |
+|         |         |       message       |           | String | 실패 메시지                                                                       |
+
+### 발신프로필 리스트 조회 (종료예정)
+
+* 23/06/30 종료 예정 API
 * 발신프로필 목록을 조회합니다.
 * **POST** /v3/kakao/profile/list
 * **Content-Type:** application/json; charset=utf-8
@@ -202,6 +261,74 @@
   "senderKey": ["05aa099bcbc5220a8c0b2XXXXXXXXXXXXX", "03423ege2545c0b2XXXXXXXXXXXXX"]
 }
 ```
+
+
+
+### 발신프로필 리스트 조회 (신규)
+
+• 발신프로필 목록을 조회합니다.
+
+• POST /v3/kakao/profile/multi
+
+• Content-Type: application/json; charset=utf-8
+
+**request**
+
+|   **키**   | **타입** | **필수** |    **설명**    |
+| :-------: | :----: | :----: | :----------: |
+|   bizId   | String |    O   | BIZPPURIO ID |
+|   apiKey  | String |    O   |   API 발급 키   |
+| senderKey |  Array |    O   |  발신 프로필 목록   |
+
+
+
+**response**
+
+|  **키**  |         |                     |           | **타입** | **설명**                                                                       |
+| :-----: | :-----: | :-----------------: | :-------: | ------ | ---------------------------------------------------------------------------- |
+|   code  |         |                     |           | String | 결과 코드                                                                        |
+| message |         |                     |           | String | 실패 시 결과 메시지                                                                  |
+|   data  |         |                     |           | Object | 성공 시 데이터                                                                     |
+|         | success |                     |           | Array  | 성공케이스에 대한 리스트                                                                |
+|         |         |      senderKey      |           | String | 발신프로필 키                                                                      |
+|         |         |         uuid        |           | String | 발신프로필 상태                                                                     |
+|         |         |         name        |           | String | 카카오톡 채널 프로필 명                                                                |
+|         |         |        status       |           | String | 상태 (A: 정상)                                                                   |
+|         |         |        block        |           | String | 발신 프로필 차단 여부                                                                 |
+|         |         |       dormant       |           | String | 발신 프로필 휴면 여부                                                                 |
+|         |         |    profileStatus    |           | String | 카카오톡 채널 상태 (A: activated, C: deactivated, B: block, E: deleting, D: deleted) |
+|         |         |      createdAt      |           | String | 등록일                                                                          |
+|         |         |      modifiedAt     |           | String | 최종 수정일                                                                       |
+|         |         |     categoryCode    |           | String | 카테고리 코드                                                                      |
+|         |         |       alimtalk      |           | String | 알림톡 사용 여부                                                                    |
+|         |         |       bizchat       |           | String | 상담톡 사용 여부                                                                    |
+|         |         |      brandtalk      |           | String | 브랜드톡 사용 여부                                                                   |
+|         |         | commitalCompanyName |           | String | 위탁사 이름 (상담톡 관련)                                                              |
+|         |         |      channelKey     |           | String | 메시지 전송 결과 수신 채널키                                                             |
+|         |         |   businessProfile   |           | String | 카카오톡 채널 비즈니스 인증 여부                                                           |
+|         |         |     businessType    |           | String | 카카오톡 채널 비즈니스 인증 타입                                                           |
+|         |         |        groups       |           | Array  | 발신 프로필 그룹 정보                                                                 |
+|         |         |                     |  groupKey | String | 발신 프로필 그룹 키                                                                  |
+|         |         |                     |    name   | Array  | 이름                                                                           |
+|         |         |                     | createdAt | String | 등록일                                                                          |
+|         |   fail  |                     |           | Array  | 실패케이스에 대한 리스트                                                                |
+|         |         |      senderKey      |           | String | 발신 프로필 키                                                                     |
+|         |         |         code        |           | String | 실패 결과 코드                                                                     |
+|         |         |       message       |           | String | 실패 메시지                                                                       |
+
+
+
+**ex)**
+
+```json5
+{
+  "bizId": "kakaoapi",
+  "apiKey": "Q4jh8oXXXXXXXX",
+  "senderKey": ["05aa099bcbc5220a8c0b2XXXXXXXXXXXXX", "03423ege2545c0b2XXXXXXXXXXXXX"]
+}
+```
+
+
 
 ### 미사용 프로필 휴면 해제
 
