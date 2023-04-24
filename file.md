@@ -41,16 +41,16 @@
 
 **Response**
 
-|  **키**  |           | **타입** |                                **설명**                                |
-| :-----: | :-------: | :----: | :------------------------------------------------------------------: |
-|   code  |           | String |                                 결과 코드                                |
-| message |           | String |                              실패 시 결과 메시지                             |
-|   data  |           |  Array |                              성공 시 이미지 목록                             |
-|         |   title   | String |                                이미지 제목                                |
-|         |    link   | String | <p>이미지 클릭 시 이동할 URL<br><strong></strong>(http:// 또는 https:// 포함)</p> |
-|         |  imageUrl | String |                          이미지가 등록된 카카오 서버 URL                         |
-|         | createdAt | String |                                이미지 등록일                               |
-|         | imageType | String |                    <p>이미지 타입<br>(기본=I, 와이드=W)</p>                    |
+|  **키**  |           | **타입** |                        **설명**                       |
+| :-----: | :-------: | :----: | :-------------------------------------------------: |
+|   code  |           | String |                        결과 코드                        |
+| message |           | String |                     실패 시 결과 메시지                     |
+|   data  |           |  Array |                     성공 시 이미지 목록                     |
+|         |   title   | String |                        이미지 제목                       |
+|         |    link   | String | <p>이미지 클릭 시 이동할 URL<br>(http:// 또는 https:// 포함)</p> |
+|         |  imageUrl | String |                 이미지가 등록된 카카오 서버 URL                 |
+|         | createdAt | String |                       이미지 등록일                       |
+|         | imageType | String |            <p>이미지 타입<br>(기본=I, 와이드=W)</p>           |
 
 ### 친구톡 이미지 삭제
 
@@ -60,11 +60,11 @@
 
 **Request**
 
-|  **키** | **타입** | **필수** |    **설명**    |
-| :----: | :----: | :----: | :----------: |
-|  bizId | String |    O   | BIZPPURIO ID |
-| apiKey | String |    O   |   API 발급 키   |
-|  image |  File  |    O   |  업로드할 이미지 파일 |
+|   **키**  | **타입** | **필수** |     **설명**     |
+| :------: | :----: | :----: | :------------: |
+|   bizId  | String |    O   |  BIZPPURIO ID  |
+|  apiKey  | String |    O   |    API 발급 키    |
+| imageUrl | String |    O   | 삭제할 이미지 URL 정보 |
 
 **Response**
 
