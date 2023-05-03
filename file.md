@@ -1,8 +1,8 @@
 # 비즈메시지 파일 관리
 
-### 친구톡 이미지 등록
+### 친구톡 기본/와이드 이미지 등록
 
-* 친구톡 이미지를 등록합니다.
+* 친구톡 기본/와이드 이미지를 등록합니다.
 * **POST** /v3/kakao/image/upload
 * **Content-Type:** multipart/form-data
 
@@ -19,6 +19,75 @@
 |   code  | String |           결과 코드          |
 | message | String |        실패 시 결과 메시지       |
 |  image  | String | 성공 시 이미지가 등록된 카카오 서버 URL |
+
+
+
+
+
+### 친구톡 와이드 아이템 리스트 이미지 업로드
+
+* 친구톡 와이드 아이템 리스트 발송 시 사용될 이미지들을 업로드 합니다.\
+  아이템 리스트 개수(1\~4개)에 맞춰서 업로드 합니다.\
+  제한 사이즈 - 가로 400px, 세로 400px \~ 가로 800px, 세로 400px\
+  비율 및 가로 픽셀 확인 X, 썸네일 크기에 맞추어 중앙 기준으로 크롭하여 노출\
+  파일 형식 및 크기 : jpg/png / 각 파일 최대 2MB
+* **POST** /v3/kakao/image/friendtalk/wideitemList
+* **Content-Type** : multipart/form-data
+
+
+
+Request parameter
+
+<figure><img src=".gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+
+Response parameter
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+### 친구톡 캐러셀 피드 이미지 업로드
+
+* 친구톡 캐러셀 피드 발송 시 사용될 이미지를 업로드 합니다.\
+  캐러셀 개수(1\~6개)에 맞춰서 업로드 합니다.\
+  제한 사이즈 - 가로 500px 이상, 가로:세로 비율 2:1 이상 3:4 이하\
+  파일형식 및 크기 : jpg, png / 각 파일 최대 2MB
+* **POST** /v3/kakao/image/friendtalk/carousel
+* **Content-Type** : multipart/form-data\
+
+
+Request parameter
+
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+Response parameter
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+Response example
+
+```json
+{
+  "code": "0000",
+  "message": "요청 성공",
+  "data": {
+    "success": [
+      {
+        "formField": "image_1",
+        "url": "https://mud-kage.kakao.com/dn/b5E6Yr/btsa5VHWWxy/0XBBKw3gSXepAAWRTwSjX0/img_l.jpg"
+      },
+      {
+        "formField": "image_2",
+        "url": "https://mud-kage.kakao.com/dn/bgUBUP/btsa9InbW8K/KXAZ7zpguOehy8IvomTs70/img_l.jpg"
+      }
+    ],
+    "failure": null
+  }
+}
+
+```
 
 
 

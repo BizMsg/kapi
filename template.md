@@ -70,7 +70,7 @@
 
 **Request**
 
-![](.gitbook/assets/image.png)
+![](<.gitbook/assets/image (15).png>)
 
 **Response**\
 
@@ -80,7 +80,7 @@
 |   code  | String |    결과 코드    |
 | message | String | 실패 시 결과 메시지 |
 
-~~~~
+
 
 ### 템플릿 목록 조회
 
@@ -94,7 +94,7 @@
 
 **Response**
 
-![](<.gitbook/assets/image (1).png>)
+![](<.gitbook/assets/image (1) (1).png>)
 
 
 
@@ -108,7 +108,7 @@
 
 ![](<.gitbook/assets/image (5) (1).png>)
 
-****
+
 
 **Response**
 
@@ -276,7 +276,7 @@
 * **Content-Type:** multipart/form-data
 
 **Request**\
-****
+
 
 ![](<.gitbook/assets/image (12).png>)
 
@@ -366,7 +366,7 @@
 
 **Request**
 
-![](<.gitbook/assets/image (2).png>)
+![](<.gitbook/assets/image (2) (2).png>)
 
 
 
