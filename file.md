@@ -14,11 +14,7 @@
 
 **Response**
 
-|  **키**  | **타입** |          **설명**          |
-| :-----: | :----: | :----------------------: |
-|   code  | String |           결과 코드          |
-| message | String |        실패 시 결과 메시지       |
-|  image  | String | 성공 시 이미지가 등록된 카카오 서버 URL |
+<table data-header-hidden><thead><tr><th align="center">Text</th><th width="165.33333333333331" align="center"></th><th width="339" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">image</td><td align="center">String</td><td align="center">성공 시 이미지가 등록된 카카오 서버 URL</td></tr></tbody></table>
 
 
 
@@ -31,7 +27,7 @@
   제한 사이즈 - 가로 400px, 세로 400px \~ 가로 800px, 세로 400px\
   비율 및 가로 픽셀 확인 X, 썸네일 크기에 맞추어 중앙 기준으로 크롭하여 노출\
   파일 형식 및 크기 : jpg/png / 각 파일 최대 2MB
-* **POST** /v3/kakao/image/friendtalk/wideitemList
+* **POST** /v3/kakao/image/friendtalk/wideItemList
 * **Content-Type** : multipart/form-data
 
 
@@ -101,25 +97,11 @@ Response example
 
 **Request**
 
-|   **키**   | **타입** | **필수** |                                                         **설명**                                                        |
-| :-------: | :----: | :----: | :-------------------------------------------------------------------------------------------------------------------: |
-|   bizId   | String |    O   |                                                      BIZPPURIO ID                                                     |
-|   apiKey  | String |    O   |                                                        API 발급 키                                                       |
-| senderKey | String |    X   | <p>발신프로필키<br>(<strong>입력시</strong> : 해당 발신프로필키에 매핑된 이미지 조회, </p><p><strong>미입력시</strong> : 공용(해당계정)으로 매핑된 이미지 조회)</p> |
-| imageType | String |    O   |                                                  이미지 타입(기본=I, 와이드=W)                                                  |
+<table data-header-hidden><thead><tr><th width="150" align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="357" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr><tr><td align="center">senderKey</td><td align="center">String</td><td align="center">X</td><td align="center"><p>발신프로필키<br>(<strong>입력시</strong> : 해당 발신프로필키에 매핑된 이미지 조회, </p><p><strong>미입력시</strong> : 공용(해당계정)으로 매핑된 이미지 조회)</p></td></tr><tr><td align="center">imageType</td><td align="center">String</td><td align="center">O</td><td align="center">이미지 타입(기본=I, 와이드=W)</td></tr></tbody></table>
 
 **Response**
 
-|  **키**  |           | **타입** |                        **설명**                       |
-| :-----: | :-------: | :----: | :-------------------------------------------------: |
-|   code  |           | String |                        결과 코드                        |
-| message |           | String |                     실패 시 결과 메시지                     |
-|   data  |           |  Array |                     성공 시 이미지 목록                     |
-|         |   title   | String |                        이미지 제목                       |
-|         |    link   | String | <p>이미지 클릭 시 이동할 URL<br>(http:// 또는 https:// 포함)</p> |
-|         |  imageUrl | String |                 이미지가 등록된 카카오 서버 URL                 |
-|         | createdAt | String |                       이미지 등록일                       |
-|         | imageType | String |            <p>이미지 타입<br>(기본=I, 와이드=W)</p>           |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="250" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">Array</td><td align="center">성공 시 이미지 목록</td></tr><tr><td align="center"></td><td align="center">title</td><td align="center">String</td><td align="center">이미지 제목</td></tr><tr><td align="center"></td><td align="center">link</td><td align="center">String</td><td align="center">이미지 클릭 시 이동할 URL<br>(http:// 또는 https:// 포함)</td></tr><tr><td align="center"></td><td align="center">imageUrl</td><td align="center">String</td><td align="center">이미지가 등록된 카카오 서버 URL</td></tr><tr><td align="center"></td><td align="center">createdAt</td><td align="center">String</td><td align="center">이미지 등록일</td></tr><tr><td align="center"></td><td align="center">imageType</td><td align="center">String</td><td align="center">이미지 타입<br>(기본=I, 와이드=W)</td></tr></tbody></table>
 
 ### 친구톡 이미지 삭제
 
@@ -129,18 +111,11 @@ Response example
 
 **Request**
 
-|   **키**  | **타입** | **필수** |     **설명**     |
-| :------: | :----: | :----: | :------------: |
-|   bizId  | String |    O   |  BIZPPURIO ID  |
-|  apiKey  | String |    O   |    API 발급 키    |
-| imageUrl | String |    O   | 삭제할 이미지 URL 정보 |
+<table data-header-hidden><thead><tr><th width="165.81471389645776" align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="234" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr><tr><td align="center">imageUrl</td><td align="center">String</td><td align="center">O</td><td align="center">삭제할 이미지 URL 정보</td></tr></tbody></table>
 
 **Response**
 
-|  **키**  | **타입** |    **설명**   |
-| :-----: | :----: | :---------: |
-|   code  | String |    결과 코드    |
-| message | String | 실패 시 결과 메시지 |
+<table data-header-hidden><thead><tr><th align="center">Text</th><th width="165.33333333333331" align="center"></th><th width="339" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr></tbody></table>
 
 
 
@@ -159,19 +134,11 @@ Response example
 
 **Request**
 
-|  **키** | **타입** | **필수** |    **설명**    |
-| :----: | :----: | :----: | :----------: |
-|  bizId | String |    O   | BIZPPURIO ID |
-| apiKey | String |    O   |   API 발급 키   |
-|  image |  File  |    O   |  업로드할 이미지 파일 |
+<table data-header-hidden><thead><tr><th width="165.81471389645776" align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="234" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr><tr><td align="center">image</td><td align="center">File</td><td align="center">O</td><td align="center">업로드할 이미지 파일</td></tr></tbody></table>
 
 **Response**
 
-|  **키**  | **타입** |          **설명**          |
-| :-----: | :----: | :----------------------: |
-|   code  | String |           결과 코드          |
-| message | String |        실패 시 결과 메시지       |
-|  image  | String | 성공 시 이미지가 등록된 카카오 서버 URL |
+<table data-header-hidden><thead><tr><th align="center">Text</th><th width="165.33333333333331" align="center"></th><th width="339" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">image</td><td align="center">String</td><td align="center">성공 시 이미지가 등록된 카카오 서버 URL</td></tr></tbody></table>
 
 
 
@@ -188,21 +155,13 @@ Response example
 
 **Request**
 
-|  **키** | **타입** | **필수** |    **설명**    |
-| :----: | :----: | :----: | :----------: |
-|  bizId | String |    O   | BIZPPURIO ID |
-| apiKey | String |    O   |   API 발급 키   |
-|  image |  File  |    O   |  업로드할 이미지 파일 |
+<table data-header-hidden><thead><tr><th width="165.81471389645776" align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="234" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr><tr><td align="center">image</td><td align="center">File</td><td align="center">O</td><td align="center">업로드할 이미지 파일</td></tr></tbody></table>
 
 
 
 **Response**
 
-|  **키**  | **타입** |          **설명**          |
-| :-----: | :----: | :----------------------: |
-|   code  | String |           결과 코드          |
-| message | String |        실패 시 결과 메시지       |
-|  image  | String | 성공 시 이미지가 등록된 카카오 서버 URL |
+<table data-header-hidden><thead><tr><th align="center">Text</th><th width="165.33333333333331" align="center"></th><th width="339" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">image</td><td align="center">String</td><td align="center">성공 시 이미지가 등록된 카카오 서버 URL</td></tr></tbody></table>
 
 
 
@@ -221,16 +180,8 @@ Response example
 
 **Request**
 
-|  **키** | **타입** | **필수** |    **설명**    |
-| :----: | :----: | :----: | :----------: |
-|  bizId | String |    O   | BIZPPURIO ID |
-| apiKey | String |    O   |   API 발급 키   |
-|  image |  File  |    O   |  업로드할 이미지 파일 |
+<table data-header-hidden><thead><tr><th width="165.81471389645776" align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="234" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr><tr><td align="center">image</td><td align="center">File</td><td align="center">O</td><td align="center">업로드할 이미지 파일</td></tr></tbody></table>
 
 **Response**
 
-|  **키**  | **타입** |          **설명**          |
-| :-----: | :----: | :----------------------: |
-|   code  | String |           결과 코드          |
-| message | String |        실패 시 결과 메시지       |
-|  image  | String | 성공 시 이미지가 등록된 카카오 서버 URL |
+<table data-header-hidden><thead><tr><th align="center">Text</th><th width="165.33333333333331" align="center"></th><th width="339" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">image</td><td align="center">String</td><td align="center">성공 시 이미지가 등록된 카카오 서버 URL</td></tr></tbody></table>
