@@ -22,21 +22,11 @@
 
 **Request**
 
-|  **키** | **타입** | **필수** |    **설명**    |
-| :----: | :----: | :----: | :----------: |
-|  bizId | String |    O   | BIZPPURIO ID |
-| apiKey | String |    O   |   API 발급 키   |
+<table data-header-hidden><thead><tr><th width="150" align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="285" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr></tbody></table>
 
 **Response**
 
-|  **키**  |           | **타입** |    **설명**   |
-| :-----: | :-------: | :----: | :---------: |
-|   code  |           | String |    결과 코드    |
-| message |           | String | 실패 시 결과 메시지 |
-|   data  |           |  Array |  성공 시 그룹 목록 |
-|         |  groupKey | String |    그룹 Key   |
-|         |    name   | String |    그룹 이름    |
-|         | createdAt | String |     생성 일    |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="203" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">Array</td><td align="center">성공 시 그룹 목록</td></tr><tr><td align="center"></td><td align="center">groupKey</td><td align="center">String</td><td align="center">그룹 Key</td></tr><tr><td align="center"></td><td align="center">name</td><td align="center">String</td><td align="center">그룹 이름</td></tr><tr><td align="center"></td><td align="center">createdAt</td><td align="center">String</td><td align="center">생성 일</td></tr></tbody></table>
 
 **ex)**
 
@@ -66,21 +56,11 @@
 
 **Request**
 
-|  **키** | **타입** | **필수** |    **설명**    |
-| :----: | :----: | :----: | :----------: |
-|  bizId | String |    O   | BIZPPURIO ID |
-| apiKey | String |    O   |   API 발급 키   |
+<table data-header-hidden><thead><tr><th width="150" align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="285" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr></tbody></table>
 
 **Response**
 
-|  **키**  |           | **타입** |    **설명**   |
-| :-----: | :-------: | :----: | :---------: |
-|   code  |           | String |    결과 코드    |
-| message |           | String | 실패 시 결과 메시지 |
-|   data  |           |  Array |  성공 시 그룹 목록 |
-|         |  groupKey | String |    그룹 Key   |
-|         |    name   | String |    그룹 이름    |
-|         | createdAt | String |    생성 일자    |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="203" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">Array</td><td align="center">성공 시 그룹 목록</td></tr><tr><td align="center"></td><td align="center">groupKey</td><td align="center">String</td><td align="center">그룹 Key</td></tr><tr><td align="center"></td><td align="center">name</td><td align="center">String</td><td align="center">그룹 이름</td></tr><tr><td align="center"></td><td align="center">createdAt</td><td align="center">String</td><td align="center">생성 일자</td></tr></tbody></table>
 
 ### 그룹 내 발신프로필 추가
 
@@ -90,23 +70,11 @@
 
 **Request**
 
-|   **키**   | **타입** | **필수** |    **설명**    |
-| :-------: | :----: | :----: | :----------: |
-|   bizId   | String |    O   | BIZPPURIO ID |
-|   apiKey  | String |    O   |   API 발급 키   |
-|  groupKey | String |    O   |  발신프로필 그룹 키  |
-| senderKey | String |    O   |    발신프로필     |
+<table data-header-hidden><thead><tr><th width="150" align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="285" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr><tr><td align="center">groupKey</td><td align="center">String</td><td align="center">O</td><td align="center">발신프로필 그룹 키</td></tr><tr><td align="center">senderKey</td><td align="center">String</td><td align="center">O</td><td align="center">발신프로필 </td></tr></tbody></table>
 
 **Response**
 
-|  **키**  |           | **타입** |    **설명**   |
-| :-----: | :-------: | :----: | :---------: |
-|   code  |           | String |    결과 코드    |
-| message |           | String | 실패 시 결과 메시지 |
-|   data  |           |  Array |  성공 시 그룹 목록 |
-|         |  groupKey | String |    그룹 Key   |
-|         |    name   | String |    그룹 이름    |
-|         | createdAt | String |    생성 일자    |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="203" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">Array</td><td align="center">성공 시 그룹 목록</td></tr><tr><td align="center"></td><td align="center">groupKey</td><td align="center">String</td><td align="center">그룹 Key</td></tr><tr><td align="center"></td><td align="center">name</td><td align="center">String</td><td align="center">그룹 이름</td></tr><tr><td align="center"></td><td align="center">createdAt</td><td align="center">String</td><td align="center">생성 일자</td></tr></tbody></table>
 
 ### 그룹에 발신프로필 삭제
 
@@ -116,19 +84,11 @@
 
 **Request**
 
-|   **키**   | **타입** | **필수** |    **설명**    |
-| :-------: | :----: | :----: | :----------: |
-|   bizId   | String |    O   | BIZPPURIO ID |
-|   apiKey  | String |    O   |   API 발급 키   |
-|  groupKey | String |    O   |  발신프로필 그룹 키  |
-| senderKey | String |    O   |    발신프로필     |
+<table data-header-hidden><thead><tr><th width="150" align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="285" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr><tr><td align="center">groupKey</td><td align="center">String</td><td align="center">O</td><td align="center">발신프로필 그룹 키</td></tr><tr><td align="center">senderKey</td><td align="center">String</td><td align="center">O</td><td align="center">발신프로필 </td></tr></tbody></table>
 
 **Request**
 
-|  **키**  | **타입** |    **설명**   |
-| :-----: | :----: | :---------: |
-|   code  | String |    결과 코드    |
-| message | String | 실패 시 결과 메시지 |
+<table data-header-hidden><thead><tr><th align="center">Text</th><th width="165.33333333333331" align="center"></th><th width="339" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr></tbody></table>
 
 **ex)**
 

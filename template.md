@@ -173,10 +173,7 @@
 
 **Request**
 
-|  **키**  | **타입** | **필수** |    **설명**    |
-| :-----: | :----: | :----: | :----------: |
-|  bizId  | String |    O   | BIZPPURIO ID |
-| message | String |    O   |   API 발급 키   |
+<table data-header-hidden><thead><tr><th align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">message</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr></tbody></table>
 
 
 
@@ -184,16 +181,7 @@
 
 
 
-|  **키**  |           | **타입** |       **설명**      |
-| :-----: | :-------: | :----: | :---------------: |
-|   code  |           | String |       결과 코드       |
-| message |           | String |    실패 시 결과 메시지    |
-|   data  |           |  Array |    성공 시 카테고리 목록   |
-|         |    code   | String |      카테고리 코드      |
-|         |    name   | String |      카테고리 이름      |
-|         | groupName | String |     카테고리 그룹 이름    |
-|         | Inclusion | String | 카테고리 적용 대상 템플릿 설명 |
-|         | exclusion | String | 카테고리 제외 대상 템플릿 설명 |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="252" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">Array</td><td align="center">성공 시 카테고리 목록</td></tr><tr><td align="center"></td><td align="center">code</td><td align="center">String</td><td align="center">카테고리 코드</td></tr><tr><td align="center"></td><td align="center">name</td><td align="center">String</td><td align="center">카테고리 이름</td></tr><tr><td align="center"></td><td align="center">groupName</td><td align="center">String</td><td align="center">카테고리 그룹 이름</td></tr><tr><td align="center"></td><td align="center">Inclusion</td><td align="center">String</td><td align="center">카테고리 적용 대상 템플릿 설명</td></tr><tr><td align="center"></td><td align="center">exclusion</td><td align="center">String</td><td align="center">카테고리 제외 대상 템플릿 설명</td></tr></tbody></table>
 
 
 
@@ -205,24 +193,11 @@
 
 **Request**
 
-|     **키**    | **타입** | **필수** |    **설명**    |
-| :----------: | :----: | :----: | :----------: |
-|     bizId    | String |    O   | BIZPPURIO ID |
-|    apiKey    | String |    O   |   API 발급 키   |
-| categoryCode | String |    O   |    카테고리 코드   |
+<table data-header-hidden><thead><tr><th align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="246" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr><tr><td align="center">categoryCode</td><td align="center">String</td><td align="center">O</td><td align="center">카테고리 코드</td></tr></tbody></table>
 
 **Response**
 
-|  **키**  |           | **타입** |       **설명**      |
-| :-----: | :-------: | :----: | :---------------: |
-|   code  |           | String |       결과 코드       |
-| message |           | String |    실패 시 결과 메시지    |
-|   data  |           |  Array |   성공 시 카테고리 정보    |
-|         |    code   | String |      카테고리 코드      |
-|         |    name   | String |      카테고리 이름      |
-|         | groupName | String |     카테고리 그룹 이름    |
-|         | Inclusion | String | 카테고리 적용 대상 템플릿 설명 |
-|         | exclusion | String | 카테고리 제외 대상 템플릿 설명 |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="271" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">Array</td><td align="center">성공 시 카테고리 정보 </td></tr><tr><td align="center"></td><td align="center">code</td><td align="center">String</td><td align="center">카테고리 코드</td></tr><tr><td align="center"></td><td align="center">name</td><td align="center">String</td><td align="center">카테고리 이름</td></tr><tr><td align="center"></td><td align="center">groupName</td><td align="center">String</td><td align="center">카테고리 그룹 이름</td></tr><tr><td align="center"></td><td align="center">Inclusion</td><td align="center">String</td><td align="center">카테고리 적용 대상 템플릿 설명</td></tr><tr><td align="center"></td><td align="center">exclusion</td><td align="center">String</td><td align="center">카테고리 제외 대상 템플릿 설명</td></tr></tbody></table>
 
 **ex)**&#x20;
 
@@ -400,3 +375,27 @@
 |   code  | String |    결과 코드    |
 | message | String | 실패 시 결과 메시지 |
 
+
+
+
+
+### 템플릿 전환
+
+* 기등록된 템플릿 (타입 : BA, EX)을 "채널 추가 버튼" 및 "채널 추가 안내 문구"가 포함된 템플릿으로 전환
+* 템플릿 전환이 되면 BA는 AD로, EX는 MI 타입으로 변경됨"채널 추가 버튼" 무조건 맨 처음으로 추가되며, 템플릿에 버튼이 이미 5개인 경우는 전환 실패
+* 채널 추가 안내 문구 (36자)가 포함되므로 기존 템플릿이 이미 964를 초과하는 경우 전환 실패
+* 기존 템플릿에 바로연결이 있으면서 버튼이 2개인 경우는 전환 실패
+* 휴면 등 비정상적인 템플릿에 대해서는 전환 실패
+* **POST** /v3/kakao/template/convertAddCh
+* **Content-Type:** application/json; charset=utf-8
+
+**Request**
+
+<figure><img src=".gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
+**Response**
+
+|  **키**  | **타입** |    **설명**   |
+| :-----: | :----: | :---------: |
+|   code  | String |    결과 코드    |
+| message | String | 실패 시 결과 메시지 |

@@ -8,19 +8,11 @@
 
 **Request**
 
-|    **키**    | **타입** | **필수** |                     **설명**                     |
-| :---------: | :----: | :----: | :--------------------------------------------: |
-|    bizId    | String |    O   |                  BIZPPURIO ID                  |
-|    apiKey   | String |    O   |                    API 발급 키                    |
-| phoneNumber | String |    O   | <p>토큰을 수신할 휴대폰번호<br>(Yellow ID의 핸드폰번호와 일치)</p> |
-|   yellowId  | String |    O   |                  카카오톡 채널(@ID)                  |
+<table data-header-hidden><thead><tr><th width="171.94744121715078" align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="251" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr><tr><td align="center">phoneNumber</td><td align="center">String</td><td align="center">O</td><td align="center">토큰을 수신할 휴대폰번호<br>(Yellow ID의 핸드폰번호와 일치)</td></tr><tr><td align="center">yellowId</td><td align="center">String</td><td align="center">O</td><td align="center">카카오톡 채널(@ID)</td></tr></tbody></table>
 
 **Request**
 
-|  **키**  | **타입** |    **설명**   |
-| :-----: | :----: | :---------: |
-|   code  | String |    결과 코드    |
-| message | String | 실패 시 결과 메시지 |
+<table data-header-hidden><thead><tr><th align="center">Text</th><th width="165.33333333333331" align="center"></th><th width="339" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr></tbody></table>
 
 ### 발신프로필 카테고리 전체 조회
 
@@ -30,20 +22,11 @@
 
 **Request**
 
-|  **키** | **타입** | **필수** |    **설명**    |
-| :----: | :----: | :----: | :----------: |
-|  bizId | String |    O   | BIZPPURIO ID |
-| apiKey | String |    O   |   API 발급 키   |
+<table data-header-hidden><thead><tr><th width="153.00141043723553" align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="209" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr></tbody></table>
 
 **Response**
 
-|  **키**  |      | **타입** |    **설명**   |
-| :-----: | :--: | :----: | :---------: |
-|   code  |      | String |    결과 코드    |
-| message |      | String |     총 개수    |
-|   data  |      |  Array | 성공 시 템플릿 목록 |
-|         | code | String |   카테고리 코드   |
-|         | name | String |   카테고리 이름   |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="203" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">총 개수</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">Array</td><td align="center">성공 시 템플릿 목록</td></tr><tr><td align="center"></td><td align="center">code</td><td align="center">String</td><td align="center">카테고리 코드</td></tr><tr><td align="center"></td><td align="center">name</td><td align="center">String</td><td align="center">카테고리 이름</td></tr></tbody></table>
 
 ### 발신프로필 카테고리 조회
 
@@ -53,21 +36,11 @@
 
 **Request**
 
-|     **키**    | **타입** | **필수** |    **설명**    |
-| :----------: | :----: | :----: | :----------: |
-|     bizId    | String |    O   | BIZPPURIO ID |
-|    apiKey    | String |    O   |   API 발급 키   |
-| categoryCode | String |    O   |    카테고리 코드   |
+<table data-header-hidden><thead><tr><th align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="241" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr><tr><td align="center">categoryCode</td><td align="center">String</td><td align="center">O</td><td align="center">카테고리 코드</td></tr></tbody></table>
 
 **Response**
 
-|  **키**  |      | **타입** |     **설명**    |
-| :-----: | :--: | :----: | :-----------: |
-|   code  |      | String |     결과 코드     |
-| message |      | String |  실패 시 결과 메시지  |
-|   data  |      | Object | 성공 시 카테고리 정보  |
-|         | code | String |    카테고리 코드    |
-|         | name | String |    카테고리 이름    |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="203" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지 </td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">Object</td><td align="center">성공 시 카테고리 정보 </td></tr><tr><td align="center"></td><td align="center">code</td><td align="center">String</td><td align="center">카테고리 코드</td></tr><tr><td align="center"></td><td align="center">name</td><td align="center">String</td><td align="center">카테고리 이름</td></tr></tbody></table>
 
 ### 발신프로필 등록
 
@@ -77,21 +50,11 @@
 
 **Request**
 
-|     **키**    | **타입** | **필수** |                              **설명**                             |
-| :----------: | :----: | :----: | :-------------------------------------------------------------: |
-|     bizId    | String |    O   |                           BIZPPURIO ID                          |
-|    apiKey    | String |    O   |                             API 발급 키                            |
-|     token    | String |    O   |                            수신받은 인증토큰                            |
-|  phoneNumber | String |    O   | <p>토큰을 수신할 휴대폰번호<br><strong></strong>(Yellow ID의 핸드폰번호와 일치)</p> |
-|   yellowId   | String |    O   |                           카카오톡 채널(@ID)                          |
-| categoryCode | String |    O   |                             카테고리 코드                             |
+<table data-header-hidden><thead><tr><th align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="248" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr><tr><td align="center">token</td><td align="center">String</td><td align="center">O</td><td align="center">수신받은 인증토큰</td></tr><tr><td align="center">phoneNumber</td><td align="center">String</td><td align="center">O</td><td align="center">토큰을 수신할 휴대폰번호<br>(Yellow ID의 핸드폰번호와 일치)</td></tr><tr><td align="center">yellowId</td><td align="center">String</td><td align="center">O</td><td align="center">카카오톡 채널(@ID)</td></tr><tr><td align="center">categoryCode</td><td align="center">String</td><td align="center">O</td><td align="center">카테고리 코드</td></tr></tbody></table>
 
 **Response**
 
-|  **키**  | **타입** |    **설명**   |
-| :-----: | :----: | :---------: |
-|   code  | String |    결과 코드    |
-| message | String | 실패 시 결과 메시지 |
+<table data-header-hidden><thead><tr><th align="center">Text</th><th width="165.33333333333331" align="center"></th><th width="339" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr></tbody></table>
 
 ### 발신프로필 조회
 
@@ -101,36 +64,11 @@
 
 **Request**
 
-|   **키**   | **타입** | **필수** |    **설명**    |
-| :-------: | :----: | :----: | :----------: |
-|   bizId   | String |    O   | BIZPPURIO ID |
-|   apiKey  | String |    O   |   API 발급 키   |
-| senderKey | String |    O   | 등록된 발신프로필의 키 |
+<table data-header-hidden><thead><tr><th align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="232" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr><tr><td align="center">senderKey</td><td align="center">String</td><td align="center">O</td><td align="center">등록된 발신프로필의 키</td></tr></tbody></table>
 
 **Response**
 
-|  **키**  |                      |  **타입** |                                                  **설명**                                                  |
-| :-----: | :------------------: | :-----: | :------------------------------------------------------------------------------------------------------: |
-|   code  |                      |  String |                                                   결과 코드                                                  |
-| message |                      |  String |                                               실패 시 결과 메시지                                                |
-|   data  |                      |  Object |                                               성공 시 카테고리 정보                                               |
-|         |       senderKey      |  String |                                                조회된 발신프로필 키                                               |
-|         |         uuid         |  String |                                                  카카오톡 채널                                                 |
-|         |         name         |  String |                                              카카오톡 채널 발신프로필 명                                             |
-|         |        status        |  String |                                                 발신프로필 상태                                                 |
-|         |         block        | Boolean |                                                발신프로필 차단 여부                                               |
-|         |        dormant       | Boolean |                                                발신프로필 휴면 여부                                               |
-|         |     profileStatus    |  String | <p>카카오톡 채널 상태 <br><strong></strong>(A: activated, C: deactivated, B: block, E: deleting, D: deleted)</p> |
-|         |       createdAt      |  String |                                                 발신프로필 등록일                                                |
-|         |      modifiedAt      |  String |                                                  최종 수정일                                                  |
-|         |     categoryCode     |  String |                                               발신프로필 카테고리코드                                               |
-|         |       alimtalk       | Boolean |                                                 알림톡 사용 여부                                                |
-|         |        bizchat       | Boolean |                                                 상담톡 사용 여부                                                |
-|         |       brandtalk      | Boolean |                                                브랜드톡 사용 여부                                                |
-|         | committalCompanyName |  String |                                              위탁사 이름 (상담톡 관련)                                             |
-|         |      chennelKey      |  String |                                             메시지 전송 결과 수신 채널키                                             |
-|         |    businessprofile   | Boolean |                                            카카오톡 채널 비즈니스 인증 여부                                            |
-|         |     businessType     |  String |                                            카카오톡 채널 비즈니스 인증 타입                                            |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="165.47893790611795" align="center"></th><th width="150" align="center"></th><th width="203" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지 </td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">Object</td><td align="center">성공 시 카테고리 정보</td></tr><tr><td align="center"></td><td align="center">senderKey</td><td align="center">String</td><td align="center">조회된 발신프로필 키</td></tr><tr><td align="center"></td><td align="center">uuid</td><td align="center">String</td><td align="center">카카오톡 채널</td></tr><tr><td align="center"></td><td align="center">name</td><td align="center">String</td><td align="center">카카오톡 채널 발신프로필 명</td></tr><tr><td align="center"></td><td align="center">status</td><td align="center">String</td><td align="center">발신프로필 상태</td></tr><tr><td align="center"></td><td align="center">block</td><td align="center">Boolean</td><td align="center">발신프로필 차단 여부</td></tr><tr><td align="center"></td><td align="center">dormant</td><td align="center">Boolean</td><td align="center">발신프로필 휴면 여부</td></tr><tr><td align="center"></td><td align="center">profileStatus</td><td align="center">String</td><td align="center">카카오톡 채널 상태 <br>(A: activated, C: deactivated, B: block, E: deleting, D: deleted)</td></tr><tr><td align="center"></td><td align="center">createdAt</td><td align="center">String</td><td align="center">발신프로필 등록일</td></tr><tr><td align="center"></td><td align="center">modifiedAt</td><td align="center">String</td><td align="center">최종 수정일</td></tr><tr><td align="center"></td><td align="center">categoryCode</td><td align="center">String</td><td align="center">발신프로필 카테고리코드</td></tr><tr><td align="center"></td><td align="center">alimtalk</td><td align="center">Boolean</td><td align="center">알림톡 사용 여부</td></tr><tr><td align="center"></td><td align="center">bizchat</td><td align="center">Boolean</td><td align="center">상담톡 사용 여부</td></tr><tr><td align="center"></td><td align="center">brandtalk</td><td align="center">Boolean</td><td align="center">브랜드톡 사용 여부</td></tr><tr><td align="center"></td><td align="center">committalCompanyName</td><td align="center">String</td><td align="center">위탁사 이름 (상담톡 관련)</td></tr><tr><td align="center"></td><td align="center">chennelKey</td><td align="center">String</td><td align="center">메시지 전송 결과 수신 채널키</td></tr><tr><td align="center"></td><td align="center">businessprofile</td><td align="center">Boolean</td><td align="center">카카오톡 채널 비즈니스 인증 여부</td></tr><tr><td align="center"></td><td align="center">businessType</td><td align="center">String</td><td align="center">카카오톡 채널 비즈니스 인증 타입</td></tr></tbody></table>
 
 *
 
@@ -149,26 +87,11 @@
 
 **Request**
 
-|  **키** | **타입** | **필수** |    **설명**    |
-| :----: | :----: | :----: | :----------: |
-|  bizId | String |    O   | BIZPPURIO ID |
-| apiKey | String |    O   |   API 발급 키   |
+<table data-header-hidden><thead><tr><th align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="202" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr></tbody></table>
 
 **Response**
 
-|  **키**  |            |           | **타입** | **설명**        |
-| :-----: | :--------: | :-------: | :----: | ------------- |
-|   code  |            |           | String | 결과 코드         |
-| message |            |           | String | 실패 시 결과 메시지   |
-|   data  |            |           | Object | 성공 시 발신프로필 목록 |
-|         |  senderKey |           | String | 조회된 발신프로필 키   |
-|         | yellowName |           | String | 발신프로필 명       |
-|         | yellowStat |           | String | 발신프로필 상태      |
-|         |    rdate   |           | String | 발신프로필 생성일자    |
-|         |   groups   |           |  Array | 성공 시 그룹데이터    |
-|         |            |  groupKey | String | 그룹 키          |
-|         |            |    name   | String | 그룹 이름         |
-|         |            | createdAt | String | 생성 일자         |
+<table data-header-hidden><thead><tr><th width="147" align="center"></th><th width="150" align="center"></th><th width="110"></th><th width="104" align="center"></th><th width="289" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"></td><td></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td></td><td align="center">String</td><td align="center">실패 시 결과 메시지 </td></tr><tr><td align="center">data</td><td align="center"></td><td></td><td align="center">Object</td><td align="center">성공 시 발신프로필 목록</td></tr><tr><td align="center"></td><td align="center">senderKey</td><td></td><td align="center">String</td><td align="center">조회된 발신프로필 키</td></tr><tr><td align="center"></td><td align="center">yellowName</td><td></td><td align="center">String</td><td align="center">발신프로필 명</td></tr><tr><td align="center"></td><td align="center">yellowStat</td><td></td><td align="center">String</td><td align="center">발신프로필 상태</td></tr><tr><td align="center"></td><td align="center">rdate</td><td></td><td align="center">String</td><td align="center">발신프로필 생성일자</td></tr><tr><td align="center"></td><td align="center">groups</td><td></td><td align="center">Array</td><td align="center">성공 시 그룹데이터</td></tr><tr><td align="center"></td><td align="center"></td><td>groupKey</td><td align="center">String</td><td align="center">그룹 키</td></tr><tr><td align="center"></td><td align="center"></td><td>name</td><td align="center">String</td><td align="center">그룹 이름</td></tr><tr><td align="center"></td><td align="center"></td><td>createdAt</td><td align="center">String</td><td align="center">생성 일자</td></tr></tbody></table>
 
 
 
@@ -182,44 +105,11 @@
 
 **Request**
 
-|  **키** | **타입** | **필수** |    **설명**    |
-| :----: | :----: | :----: | :----------: |
-|  bizId | String |    O   | BIZPPURIO ID |
-| apiKey | String |    O   |   API 발급 키   |
+<table data-header-hidden><thead><tr><th align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="202" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr></tbody></table>
 
 **Response**
 
-|  **키**  |         |                     |           | **타입** | **설명**                                                                       |
-| :-----: | :-----: | :-----------------: | :-------: | ------ | ---------------------------------------------------------------------------- |
-|   code  |         |                     |           | String | 결과 코드                                                                        |
-| message |         |                     |           | String | 실패 시 결과 메시지                                                                  |
-|   data  |         |                     |           | Object | 성공 시 데이터                                                                     |
-|         | success |                     |           | Array  | 성공케이스에 대한 리스트                                                                |
-|         |         |      senderKey      |           | String | 발신프로필 키                                                                      |
-|         |         |         uuid        |           | String | 발신프로필 상태                                                                     |
-|         |         |         name        |           | String | 카카오톡 채널 프로필 명                                                                |
-|         |         |        status       |           | String | 상태 (A: 정상)                                                                   |
-|         |         |        block        |           | String | 발신 프로필 차단 여부                                                                 |
-|         |         |       dormant       |           | String | 발신 프로필 휴면 여부                                                                 |
-|         |         |    profileStatus    |           | String | 카카오톡 채널 상태 (A: activated, C: deactivated, B: block, E: deleting, D: deleted) |
-|         |         |      createdAt      |           | String | 등록일                                                                          |
-|         |         |      modifiedAt     |           | String | 최종 수정일                                                                       |
-|         |         |     categoryCode    |           | String | 카테고리 코드                                                                      |
-|         |         |       alimtalk      |           | String | 알림톡 사용 여부                                                                    |
-|         |         |       bizchat       |           | String | 상담톡 사용 여부                                                                    |
-|         |         |      brandtalk      |           | String | 브랜드톡 사용 여부                                                                   |
-|         |         | commitalCompanyName |           | String | 위탁사 이름 (상담톡 관련)                                                              |
-|         |         |      channelKey     |           | String | 메시지 전송 결과 수신 채널키                                                             |
-|         |         |   businessProfile   |           | String | 카카오톡 채널 비즈니스 인증 여부                                                           |
-|         |         |     businessType    |           | String | 카카오톡 채널 비즈니스 인증 타입                                                           |
-|         |         |        groups       |           | Array  | 발신 프로필 그룹 정보                                                                 |
-|         |         |                     |  groupKey | String | 발신 프로필 그룹 키                                                                  |
-|         |         |                     |    name   | Array  | 이름                                                                           |
-|         |         |                     | createdAt | String | 등록일                                                                          |
-|         |   fail  |                     |           | Array  | 실패케이스에 대한 리스트                                                                |
-|         |         |      senderKey      |           | String | 발신 프로필 키                                                                     |
-|         |         |         code        |           | String | 실패 결과 코드                                                                     |
-|         |         |       message       |           | String | 실패 메시지                                                                       |
+<table data-header-hidden><thead><tr><th width="147" align="center"></th><th width="150" align="center"></th><th width="180"></th><th width="122"></th><th width="104" align="center"></th><th width="289" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"></td><td></td><td></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td></td><td></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td></td><td></td><td align="center">String</td><td align="center">실패 시 결과 메시지 </td></tr><tr><td align="center">data</td><td align="center"></td><td></td><td></td><td align="center">Object</td><td align="center">성공 시 데이터</td></tr><tr><td align="center"></td><td align="center">success</td><td></td><td></td><td align="center">Array</td><td align="center">성공케이스에 대한 리스트</td></tr><tr><td align="center"></td><td align="center"></td><td>senderKey</td><td></td><td align="center">String</td><td align="center">발신프로필 키</td></tr><tr><td align="center"></td><td align="center"></td><td>uuid</td><td></td><td align="center">String</td><td align="center">발신프로필 상태</td></tr><tr><td align="center"></td><td align="center"></td><td>name</td><td></td><td align="center">String</td><td align="center">카카오톡 채널 프로필 명</td></tr><tr><td align="center"></td><td align="center"></td><td>status</td><td></td><td align="center">String</td><td align="center">상태 (A: 정상)</td></tr><tr><td align="center"></td><td align="center"></td><td>block</td><td></td><td align="center">String</td><td align="center">발신 프로필 차단 여부</td></tr><tr><td align="center"></td><td align="center"></td><td>dormant</td><td></td><td align="center">String</td><td align="center">발신 프로필 휴면 여부</td></tr><tr><td align="center"></td><td align="center"></td><td>profileStatus</td><td></td><td align="center">String</td><td align="center">카카오톡 채널 상태 (A: activated, C: deactivated, B: block, E: deleting, D: deleted)</td></tr><tr><td align="center"></td><td align="center"></td><td>createdAt</td><td></td><td align="center">String</td><td align="center">등록일</td></tr><tr><td align="center"></td><td align="center"></td><td>modifiedAt</td><td></td><td align="center">String</td><td align="center">최종 수정일</td></tr><tr><td align="center"></td><td align="center"></td><td>categoryCode</td><td></td><td align="center">String</td><td align="center">카테고리 코드</td></tr><tr><td align="center"></td><td align="center"></td><td>alimtalk</td><td></td><td align="center">String</td><td align="center">알림톡 사용 여부</td></tr><tr><td align="center"></td><td align="center"></td><td>bizchat</td><td></td><td align="center">String</td><td align="center">상담톡 사용 여부</td></tr><tr><td align="center"></td><td align="center"></td><td>brandtalk</td><td></td><td align="center">String</td><td align="center">브랜드톡 사용 여부</td></tr><tr><td align="center"></td><td align="center"></td><td>commitalCompanyName</td><td></td><td align="center">String</td><td align="center">위탁사 이름 (상담톡 관련)</td></tr><tr><td align="center"></td><td align="center"></td><td>channelKey</td><td></td><td align="center">String</td><td align="center">메시지 전송 결과 수신 채널키</td></tr><tr><td align="center"></td><td align="center"></td><td>businessProfile</td><td></td><td align="center">String</td><td align="center">카카오톡 채널 비즈니스 인증 여부</td></tr><tr><td align="center"></td><td align="center"></td><td>businessType</td><td></td><td align="center">String</td><td align="center">카카오톡 채널 비즈니스 인증 타입</td></tr><tr><td align="center"></td><td align="center"></td><td>groups</td><td></td><td align="center">Array</td><td align="center">발신 프로필 그룹 정보</td></tr><tr><td align="center"></td><td align="center"></td><td></td><td>groupKey</td><td align="center">String</td><td align="center">발신 프로필 그룹 키</td></tr><tr><td align="center"></td><td align="center"></td><td></td><td>name</td><td align="center">Array</td><td align="center">이름</td></tr><tr><td align="center"></td><td align="center"></td><td></td><td>createdAt</td><td align="center">String</td><td align="center">등록일</td></tr><tr><td align="center"></td><td align="center">fail</td><td></td><td></td><td align="center">Array</td><td align="center">실패케이스에 대한 리스트</td></tr><tr><td align="center"></td><td align="center"></td><td>senderKey</td><td></td><td align="center">String</td><td align="center">발신 프로필 키</td></tr><tr><td align="center"></td><td align="center"></td><td>code</td><td></td><td align="center">String</td><td align="center">실패 결과 코드</td></tr><tr><td align="center"></td><td align="center"></td><td>message</td><td></td><td align="center">String</td><td align="center">실패 메시지</td></tr></tbody></table>
 
 ### 발신프로필 리스트 조회 (종료예정)
 
@@ -230,27 +120,11 @@
 
 **Request**
 
-|   **키**   | **타입** | **필수** |    **설명**    |
-| :-------: | :----: | :----: | :----------: |
-|   bizId   | String |    O   | BIZPPURIO ID |
-|   apiKey  | String |    O   |   API 발급 키   |
-| senderKey |  Array |    O   |  발신 프로필 목록   |
+<table data-header-hidden><thead><tr><th align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="196" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr><tr><td align="center">senderKey</td><td align="center">Array</td><td align="center">O</td><td align="center">발신 프로필 목록 </td></tr></tbody></table>
 
 **Response**
 
-|  **키**  |            |           | **타입** |     **설명**    |
-| :-----: | :--------: | :-------: | :----: | :-----------: |
-|   code  |            |           | String |     결과 코드     |
-| message |            |           | String |  실패 시 결과 메시지  |
-|   data  |            |           | Object | 성공 시 발신프로필 목록 |
-|         |  senderKey |           | String | 조회된 발신프로필 key |
-|         | yellowName |           | String |    발신프로필 명    |
-|         | yellowStat |           | String |    발신프로필 상태   |
-|         |    rdate   |           | String |   발신프로필 생성일자  |
-|         |   groups   |           |  Array |   성공 시 그룹데이터  |
-|         |            |  groupKey | String |     그룹 key    |
-|         |            |    name   | String |      그룹이름     |
-|         |            | createdAt | String |      생성일자     |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="203" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"></td><td align="center"></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center"></td><td align="center">Object</td><td align="center">성공 시 발신프로필 목록</td></tr><tr><td align="center"></td><td align="center">senderKey</td><td align="center"></td><td align="center">String</td><td align="center">조회된 발신프로필 key</td></tr><tr><td align="center"></td><td align="center">yellowName</td><td align="center"></td><td align="center">String</td><td align="center">발신프로필 명</td></tr><tr><td align="center"></td><td align="center">yellowStat</td><td align="center"></td><td align="center">String</td><td align="center">발신프로필 상태</td></tr><tr><td align="center"></td><td align="center">rdate</td><td align="center"></td><td align="center">String</td><td align="center">발신프로필 생성일자</td></tr><tr><td align="center"></td><td align="center">groups</td><td align="center"></td><td align="center">Array</td><td align="center">성공 시 그룹데이터</td></tr><tr><td align="center"></td><td align="center"></td><td align="center">groupKey</td><td align="center">String</td><td align="center">그룹 key</td></tr><tr><td align="center"></td><td align="center"></td><td align="center">name</td><td align="center">String</td><td align="center">그룹이름</td></tr><tr><td align="center"></td><td align="center"></td><td align="center">createdAt</td><td align="center">String</td><td align="center">생성일자</td></tr></tbody></table>
 
 **ex)**
 
@@ -274,47 +148,13 @@
 
 **request**
 
-|   **키**   | **타입** | **필수** |    **설명**    |
-| :-------: | :----: | :----: | :----------: |
-|   bizId   | String |    O   | BIZPPURIO ID |
-|   apiKey  | String |    O   |   API 발급 키   |
-| senderKey |  Array |    O   |  발신 프로필 목록   |
+<table data-header-hidden><thead><tr><th align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="196" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr><tr><td align="center">senderKey</td><td align="center">Array</td><td align="center">O</td><td align="center">발신 프로필 목록 </td></tr></tbody></table>
 
 
 
 **response**
 
-|  **키**  |         |                     |           | **타입** | **설명**                                                                       |
-| :-----: | :-----: | :-----------------: | :-------: | ------ | ---------------------------------------------------------------------------- |
-|   code  |         |                     |           | String | 결과 코드                                                                        |
-| message |         |                     |           | String | 실패 시 결과 메시지                                                                  |
-|   data  |         |                     |           | Object | 성공 시 데이터                                                                     |
-|         | success |                     |           | Array  | 성공케이스에 대한 리스트                                                                |
-|         |         |      senderKey      |           | String | 발신프로필 키                                                                      |
-|         |         |         uuid        |           | String | 발신프로필 상태                                                                     |
-|         |         |         name        |           | String | 카카오톡 채널 프로필 명                                                                |
-|         |         |        status       |           | String | 상태 (A: 정상)                                                                   |
-|         |         |        block        |           | String | 발신 프로필 차단 여부                                                                 |
-|         |         |       dormant       |           | String | 발신 프로필 휴면 여부                                                                 |
-|         |         |    profileStatus    |           | String | 카카오톡 채널 상태 (A: activated, C: deactivated, B: block, E: deleting, D: deleted) |
-|         |         |      createdAt      |           | String | 등록일                                                                          |
-|         |         |      modifiedAt     |           | String | 최종 수정일                                                                       |
-|         |         |     categoryCode    |           | String | 카테고리 코드                                                                      |
-|         |         |       alimtalk      |           | String | 알림톡 사용 여부                                                                    |
-|         |         |       bizchat       |           | String | 상담톡 사용 여부                                                                    |
-|         |         |      brandtalk      |           | String | 브랜드톡 사용 여부                                                                   |
-|         |         | commitalCompanyName |           | String | 위탁사 이름 (상담톡 관련)                                                              |
-|         |         |      channelKey     |           | String | 메시지 전송 결과 수신 채널키                                                             |
-|         |         |   businessProfile   |           | String | 카카오톡 채널 비즈니스 인증 여부                                                           |
-|         |         |     businessType    |           | String | 카카오톡 채널 비즈니스 인증 타입                                                           |
-|         |         |        groups       |           | Array  | 발신 프로필 그룹 정보                                                                 |
-|         |         |                     |  groupKey | String | 발신 프로필 그룹 키                                                                  |
-|         |         |                     |    name   | Array  | 이름                                                                           |
-|         |         |                     | createdAt | String | 등록일                                                                          |
-|         |   fail  |                     |           | Array  | 실패케이스에 대한 리스트                                                                |
-|         |         |      senderKey      |           | String | 발신 프로필 키                                                                     |
-|         |         |         code        |           | String | 실패 결과 코드                                                                     |
-|         |         |       message       |           | String | 실패 메시지                                                                       |
+<table data-header-hidden><thead><tr><th width="147" align="center"></th><th width="150" align="center"></th><th width="180"></th><th width="122"></th><th width="104" align="center"></th><th width="289" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"></td><td></td><td></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td></td><td></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td></td><td></td><td align="center">String</td><td align="center">실패 시 결과 메시지 </td></tr><tr><td align="center">data</td><td align="center"></td><td></td><td></td><td align="center">Object</td><td align="center">성공 시 데이터</td></tr><tr><td align="center"></td><td align="center">success</td><td></td><td></td><td align="center">Array</td><td align="center">성공케이스에 대한 리스트</td></tr><tr><td align="center"></td><td align="center"></td><td>senderKey</td><td></td><td align="center">String</td><td align="center">발신프로필 키</td></tr><tr><td align="center"></td><td align="center"></td><td>uuid</td><td></td><td align="center">String</td><td align="center">발신프로필 상태</td></tr><tr><td align="center"></td><td align="center"></td><td>name</td><td></td><td align="center">String</td><td align="center">카카오톡 채널 프로필 명</td></tr><tr><td align="center"></td><td align="center"></td><td>status</td><td></td><td align="center">String</td><td align="center">상태 (A: 정상)</td></tr><tr><td align="center"></td><td align="center"></td><td>block</td><td></td><td align="center">String</td><td align="center">발신 프로필 차단 여부</td></tr><tr><td align="center"></td><td align="center"></td><td>dormant</td><td></td><td align="center">String</td><td align="center">발신 프로필 휴면 여부</td></tr><tr><td align="center"></td><td align="center"></td><td>profileStatus</td><td></td><td align="center">String</td><td align="center">카카오톡 채널 상태 (A: activated, C: deactivated, B: block, E: deleting, D: deleted)</td></tr><tr><td align="center"></td><td align="center"></td><td>createdAt</td><td></td><td align="center">String</td><td align="center">등록일</td></tr><tr><td align="center"></td><td align="center"></td><td>modifiedAt</td><td></td><td align="center">String</td><td align="center">최종 수정일</td></tr><tr><td align="center"></td><td align="center"></td><td>categoryCode</td><td></td><td align="center">String</td><td align="center">카테고리 코드</td></tr><tr><td align="center"></td><td align="center"></td><td>alimtalk</td><td></td><td align="center">String</td><td align="center">알림톡 사용 여부</td></tr><tr><td align="center"></td><td align="center"></td><td>bizchat</td><td></td><td align="center">String</td><td align="center">상담톡 사용 여부</td></tr><tr><td align="center"></td><td align="center"></td><td>brandtalk</td><td></td><td align="center">String</td><td align="center">브랜드톡 사용 여부</td></tr><tr><td align="center"></td><td align="center"></td><td>commitalCompanyName</td><td></td><td align="center">String</td><td align="center">위탁사 이름 (상담톡 관련)</td></tr><tr><td align="center"></td><td align="center"></td><td>channelKey</td><td></td><td align="center">String</td><td align="center">메시지 전송 결과 수신 채널키</td></tr><tr><td align="center"></td><td align="center"></td><td>businessProfile</td><td></td><td align="center">String</td><td align="center">카카오톡 채널 비즈니스 인증 여부</td></tr><tr><td align="center"></td><td align="center"></td><td>businessType</td><td></td><td align="center">String</td><td align="center">카카오톡 채널 비즈니스 인증 타입</td></tr><tr><td align="center"></td><td align="center"></td><td>groups</td><td></td><td align="center">Array</td><td align="center">발신 프로필 그룹 정보</td></tr><tr><td align="center"></td><td align="center"></td><td></td><td>groupKey</td><td align="center">String</td><td align="center">발신 프로필 그룹 키</td></tr><tr><td align="center"></td><td align="center"></td><td></td><td>name</td><td align="center">Array</td><td align="center">이름</td></tr><tr><td align="center"></td><td align="center"></td><td></td><td>createdAt</td><td align="center">String</td><td align="center">등록일</td></tr><tr><td align="center"></td><td align="center">fail</td><td></td><td></td><td align="center">Array</td><td align="center">실패케이스에 대한 리스트</td></tr><tr><td align="center"></td><td align="center"></td><td>senderKey</td><td></td><td align="center">String</td><td align="center">발신 프로필 키</td></tr><tr><td align="center"></td><td align="center"></td><td>code</td><td></td><td align="center">String</td><td align="center">실패 결과 코드</td></tr><tr><td align="center"></td><td align="center"></td><td>message</td><td></td><td align="center">String</td><td align="center">실패 메시지</td></tr></tbody></table>
 
 
 
@@ -338,15 +178,8 @@
 
 **Request**
 
-|   **키**   | **타입** | **필수** |    **설명**    |
-| :-------: | :----: | :----: | :----------: |
-|   bizId   | String |    O   | BIZPPURIO ID |
-|   apiKey  | String |    O   |   API 발급 키   |
-| senderKey |  Array |    O   | 등록된 발신프로필의 키 |
+<table data-header-hidden><thead><tr><th width="150" align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="215" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr><tr><td align="center">senderKey</td><td align="center">Array</td><td align="center">O</td><td align="center">등록된 발신프로필의 키</td></tr></tbody></table>
 
 **Response**
 
-|  **키**  | **타입** |    **설명**   |
-| :-----: | :----: | :---------: |
-|   code  | String |    결과 코드    |
-| message | String | 실패 시 결과 메시지 |
+<table data-header-hidden><thead><tr><th align="center">Text</th><th width="165.33333333333331" align="center"></th><th width="339" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr></tbody></table>
