@@ -8,7 +8,7 @@
 
 **Request**
 
-![](<.gitbook/assets/image (6) (1) (1).png>)
+<figure><img src=".gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 ![](<.gitbook/assets/image (4) (1).png>)
 
@@ -124,7 +124,7 @@
 
 **Request**
 
-![](<.gitbook/assets/image (9) (1).png>)
+<figure><img src=".gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 
 
