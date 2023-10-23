@@ -32,7 +32,6 @@
   "templateContent": "봇키워드 테스트",
   "templateMessageType": "MI",
   "templateExtra": "부가정보입니다",
-  "templateAd": "광고성메시지입니다",
   "categoryCode": "002001",
   "securityFlag": false,
   "templateEmphasizeType": "ITEM_LIST",
