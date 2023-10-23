@@ -111,7 +111,7 @@
 
 **Response**
 
-![](<.gitbook/assets/image (11) (1).png>)
+<figure><img src=".gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 
 
