@@ -13,13 +13,14 @@
 * 각 URL Path에 정의된 Parameter를 전달하면 다우기술 서버에서 **BL처리 후 결과를 전송**하는 방식을 취합니다. \
   (Result : JSON)
 * **UTF-8** 인코딩으로 연동합니다.
+* API 요청에 대한 응답 대기 시간(timeout)은 15 \~ 40초를 권장합니다.
 
 
 
 ### 서비스 연동
 
 * 비즈뿌리오에 등록된 모듈계정(bizId)이 필요하며 API연동 승인 상태임을 확인합니다.
-* API를 연동하기 위한 API Key 발급을 진행해 주세요.
+* API를 연동하기 위한 apiKey 발급을 진행해 주세요.
 * 연동 URL : [https://kapi.ppurio.com/](https://kapi.ppurio.com/)
 
 
