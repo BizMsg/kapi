@@ -20,8 +20,11 @@
 ### 서비스 연동
 
 * 비즈뿌리오에 등록된 모듈계정(bizId)이 필요하며 API연동 승인 상태임을 확인합니다.
-* API를 연동하기 위한 apiKey 발급을 진행해 주세요.
-* 연동 URL : [https://kapi.ppurio.com/](https://kapi.ppurio.com/)
+* API를 연동하기 위한 apiKey 발급을 진행해 주세요. (다우기술 사업팀 담당자에게 문의)
+
+> API 연동 URL : [https://kapi.ppurio.com/](https://kapi.ppurio.com/)
+
+
 
 
 
