@@ -8,9 +8,7 @@
 
 **Request**
 
-<figure><img src=".gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
-
-![](<.gitbook/assets/image (4) (1).png>)
+<figure><img src=".gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 **Response**
 
@@ -123,7 +121,7 @@
 
 **Request**
 
-<figure><img src=".gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 
 
