@@ -10,7 +10,7 @@ description: api 응답코드에 대한 상세내용입니다.
 
 
 
-<table><thead><tr><th width="113">code</th><th width="320.66666666666663">message</th><th>설명</th></tr></thead><tbody><tr><td>0000</td><td>-</td><td>요청 성공</td></tr><tr><td></td><td>MissingRequiredParameterException</td><td>필수 파라미터가 없음</td></tr><tr><td></td><td>InvalidImageLengthException</td><td>이미지 용량 초과</td></tr><tr><td></td><td>InvalidImageShapeException</td><td>발송할  없는 이미 사이즈</td></tr><tr><td></td><td>InvalidImageFormatException</td><td>지원하지 않는 이미지 형식</td></tr><tr><td></td><td>FailedToUploadImageException</td><td>내부 시스템 오류로 업로드 실패</td></tr><tr><td></td><td>result.failure[].error.message 참고</td><td>일부 이미지 업로드 실패</td></tr><tr><td></td><td>Request Entity Too Large</td><td>이미지 용량 초과</td></tr></tbody></table>
+<table><thead><tr><th width="113">code</th><th width="320.66666666666663">message</th><th>설명</th></tr></thead><tbody><tr><td>0000</td><td>-</td><td>요청 성공</td></tr><tr><td>1003</td><td>MissingRequiredParameterException</td><td>필수 파라미터가 없음</td></tr><tr><td>2001</td><td>InvalidImageLengthException</td><td>이미지 용량 초과</td></tr><tr><td>2002</td><td>InvalidImageShapeException</td><td>발송할  없는 이미 사이즈</td></tr><tr><td>2003</td><td>InvalidImageFormatException</td><td>지원하지 않는 이미지 형식</td></tr><tr><td>2004</td><td>FailedToUploadImageException</td><td>내부 시스템 오류로 업로드 실패</td></tr><tr><td>6000</td><td>result.failure[].error.message 참고</td><td>일부 이미지 업로드 실패</td></tr><tr><td>413</td><td>Request Entity Too Large</td><td>이미지 용량 초과</td></tr></tbody></table>
 
 
 
