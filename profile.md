@@ -54,7 +54,7 @@
 
 **Response**
 
-<table data-header-hidden><thead><tr><th align="center">Text</th><th width="165.33333333333331" align="center"></th><th width="339" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="188" align="center">Text</th><th width="129" align="center"></th><th width="134" align="center"></th><th width="339" align="center"></th><th data-hidden align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td><td align="center"></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td><td align="center"></td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td><td align="center"></td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">Object</td><td align="center">성공 시 발신프로필 정보</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">senderKey</td><td align="center">String</td><td align="center">발신프로필 키</td><td align="center">senderKey</td></tr></tbody></table>
 
 ### 발신프로필 조회
 
