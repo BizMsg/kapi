@@ -170,7 +170,7 @@
 
 **Request**
 
-<table data-header-hidden><thead><tr><th align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">message</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr></tbody></table>
 
 
 
