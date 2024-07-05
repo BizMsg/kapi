@@ -103,6 +103,10 @@ Response example
 
 <table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="250" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">Array</td><td align="center">성공 시 이미지 목록</td></tr><tr><td align="center"></td><td align="center">title</td><td align="center">String</td><td align="center">이미지 제목</td></tr><tr><td align="center"></td><td align="center">link</td><td align="center">String</td><td align="center">이미지 클릭 시 이동할 URL<br>(http:// 또는 https:// 포함)</td></tr><tr><td align="center"></td><td align="center">imageUrl</td><td align="center">String</td><td align="center">이미지가 등록된 카카오 서버 URL</td></tr><tr><td align="center"></td><td align="center">createdAt</td><td align="center">String</td><td align="center">이미지 등록일</td></tr><tr><td align="center"></td><td align="center">imageType</td><td align="center">String</td><td align="center">이미지 타입<br>(기본=I, 와이드=W)</td></tr></tbody></table>
 
+
+
+
+
 ### 친구톡 이미지 삭제
 
 * 등록된 친구톡 이미지를 삭제합니다.
@@ -119,11 +123,11 @@ Response example
 
 
 
-###
+
 
 ### 알림톡 템플릿 등록용 이미지 업로드
 
-* 이미지 알림톡 또는 아이템리스트 알림톡 템플릿 등록 시 사용될 이미지를 업로드 합니다.&#x20;
+* 강조유형이  이미지형 또는 아이템리스트형인 알림톡 템플릿 등록 시 사용될 이미지를 업로드 합니다.&#x20;
 
 &#x20;       제한 사이즈 - 가로 500px 이상, 가로:세로 비율 2:1&#x20;
 
@@ -135,29 +139,6 @@ Response example
 **Request**
 
 <table data-header-hidden><thead><tr><th width="165.81471389645776" align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="234" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr><tr><td align="center">image</td><td align="center">File</td><td align="center">O</td><td align="center">업로드할 이미지 파일</td></tr></tbody></table>
-
-**Response**
-
-<table data-header-hidden><thead><tr><th align="center">Text</th><th width="165.33333333333331" align="center"></th><th width="339" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">image</td><td align="center">String</td><td align="center">성공 시 이미지가 등록된 카카오 서버 URL</td></tr></tbody></table>
-
-
-
-### 알림톡 이미지 업로드
-
-* 이미지 알림톡 또는 아이템리스트 알림톡 발송 시 사용될 이미지를 업로드 합니다.&#x20;
-
-&#x20;       제한 사이즈 - 가로 500px 이상, 가로:세로 비율 2:1 이상 3:4 이하&#x20;
-
-&#x20;       파일형식 및 크기 : jpg, png / 최대 500KB
-
-* **POST** /v3/kakao/image/alimtalk
-* **Content-Type:** multipart/form-data
-
-**Request**
-
-<table data-header-hidden><thead><tr><th width="165.81471389645776" align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="234" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr><tr><td align="center">image</td><td align="center">File</td><td align="center">O</td><td align="center">업로드할 이미지 파일</td></tr></tbody></table>
-
-
 
 **Response**
 
