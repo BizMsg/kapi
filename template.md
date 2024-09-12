@@ -8,7 +8,9 @@
 
 **Request**
 
-<figure><img src=".gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+
+
+<figure><img src=".gitbook/assets/제목 없음 (1).png" alt=""><figcaption></figcaption></figure>
 
 **Response**
 
