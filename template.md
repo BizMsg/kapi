@@ -6,9 +6,7 @@
 * **POST** /v3/kakao/template/add
 * **Content-Type:** application/json; charset=utf-8
 
-**Request**
-
-
+**Reques**
 
 <figure><img src=".gitbook/assets/제목 없음 (1).png" alt=""><figcaption></figcaption></figure>
 
