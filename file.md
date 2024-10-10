@@ -49,7 +49,7 @@ Response parameter
 * 친구톡 캐러셀 피드 발송 시 사용될 이미지를 업로드 합니다.\
   캐러셀 개수(1\~6개)에 맞춰서 업로드 합니다.\
   제한 사이즈 - 가로 500px 이상, 가로:세로 비율 2:1 이상 3:4 이하\
-  파일형식 및 크기 : jpg, png / 각 파일 최대 2MB
+  파일형식 및 크기 : jpg, png / 각 파일 최대 1MB
 * **POST** /v3/kakao/image/friendtalk/carousel
 * **Content-Type** : multipart/form-data\
 
