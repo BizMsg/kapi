@@ -2,15 +2,13 @@
 
 ### 친구톡 기본/와이드 이미지 등록
 
-* 친구톡 기본/와이드 이미지를 등록합니다.
+* 친구톡 기본/와이드/프리미엄 동영상/커머스 이미지를 합니다.
 * **POST** /v3/kakao/image/upload
 * **Content-Type:** multipart/form-data
 
 **Request**
 
-![](<.gitbook/assets/image (13).png>)
-
-
+<figure><img src=".gitbook/assets/KAPI 이미지.png" alt=""><figcaption></figcaption></figure>
 
 **Response**
 
@@ -86,6 +84,54 @@ Response example
 ```
 
 
+
+
+
+### 친구톡 캐러셀 커머스 이미지 등록
+
+*   친구톡 캐러셀 커머스 발송 시 사용될 이미지를 업로드 합니다.
+
+    캐러셀  개수(1\~11개)에 맞춰서 업로드 합니다.
+
+    제한 사이즈 - 가로 500px 이상, 가로:세로 비율 2:1 이상 3:4 이하
+
+    파일형식 및 크기 : jpg, png / 각 파일 최대 5MB
+* **POST** /v3/kakao/image/friendtalk/carouselCommerce
+* **Content-Type:** multipart/form-data
+
+Request parameter
+
+<figure><img src=".gitbook/assets/KAPI_친구톡캐러셀커머스 이미지등록.png" alt=""><figcaption></figcaption></figure>
+
+Response parameter
+
+<figure><img src=".gitbook/assets/KAPI_캐러셀(RESPONSE).png" alt=""><figcaption></figcaption></figure>
+
+Response example
+
+```
+{
+  "code": "6000",
+  "message": "요청 성공",
+  "data": {
+    "success": [
+      {
+        "formField": "image_2",
+        "url": "https://mud-kage.kakao.com/dn/cyRwF2/btsbmPfwwq4/GFYlmhCcldaydDc7pqH7g0/img_l.jpg"
+      }
+    ],
+    "failure": [
+      {
+        "formField": "image_1",
+        "error": {
+          "code": "2002",
+          "message": "InvalidImageShapeException(가로는 최소 500px, 세로는 최소 250px 이상이어야 합니다)"
+        }
+      }
+    ]
+  }
+}
+```
 
 
 
