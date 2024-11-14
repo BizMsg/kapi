@@ -109,7 +109,7 @@ Response parameter
 
 Response example
 
-```
+```json
 {
   "code": "6000",
   "message": "요청 성공",
