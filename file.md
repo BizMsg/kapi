@@ -8,7 +8,7 @@
 
 **Request**
 
-<figure><img src=".gitbook/assets/KAPI 이미지.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/KAPI 이미지 (1).png" alt=""><figcaption></figcaption></figure>
 
 **Response**
 
