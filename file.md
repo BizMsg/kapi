@@ -101,11 +101,11 @@ Response example
 
 Request parameter
 
-<figure><img src=".gitbook/assets/KAPI_친구톡캐러셀커머스 이미지등록.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/KAPI_친구톡캐러셀커머스 이미지등록 (1).png" alt=""><figcaption></figcaption></figure>
 
 Response parameter
 
-<figure><img src=".gitbook/assets/KAPI_캐러셀(RESPONSE).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/KAPI_캐러셀(RESPONSE) (1).png" alt=""><figcaption></figcaption></figure>
 
 Response example
 
