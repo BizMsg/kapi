@@ -24,7 +24,7 @@
   아이템 리스트 개수(1\~4개)에 맞춰서 업로드 합니다.\
   제한 사이즈 - 가로 400px, 세로 400px \~ 가로 800px, 세로 400px\
   비율 및 가로 픽셀 확인 X, 썸네일 크기에 맞추어 중앙 기준으로 크롭하여 노출\
-  파일 형식 및 크기 : jpg/png / 각 파일 최대 2MB
+  파일 형식 및 크기 : jpg/png / 각 파일 최대 5MB
 * **POST** /v3/kakao/image/friendtalk/wideItemList
 * **Content-Type** : multipart/form-data
 
